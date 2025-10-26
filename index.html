@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiya Sinha | Machine Learning Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0">
+    <h1 class="text-2xl font-semibold">Jiya Sinha</h1>
+    <div class="space-x-6">
+      <a href="#about" class="hover:text-indigo-600">About</a>
+      <a href="#projects" class="hover:text-indigo-600">Projects</a>
+      <a href="#publications" class="hover:text-indigo-600">Publications</a>
+      <a href="#experience" class="hover:text-indigo-600">Experience</a>
+      <a href="#resume" class="hover:text-indigo-600">Resume</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+
+<!-- Hero Section -->
+<section class="text-center py-20 bg-gradient-to-br from-indigo-100 to-purple-100">
+  <!-- Profile Image -->
+  <img
+    src="pfp.jpg"
+    alt="Jiya Sinha"
+    class="w-40 h-40 rounded-full mx-auto shadow-lg object-cover border-4 border-white"
+  />
+
+  <!-- Name -->
+  <h2 class="text-4xl font-bold mt-6 mb-2 text-gray-800">Jiya Sinha</h2>
+
+    <!-- Contact Info -->
+  <p class="text-gray-600 mb-6">
+    <a href="mailto:jiya22@iiserb.ac.in" class="hover:underline">jiya22@iiserb.ac.in</a> ·
+    <a href="https://github.com/sinhajiya" target="_blank" class="hover:underline">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/jiyasinha" target="_blank" class="hover:underline">LinkedIn</a>
+  </p>
+
+  <!-- Intro Paragraph -->
+  <p class="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+    I’m a BS student in <b>Data Science and Engineering</b> (Dec 2022–Aug 2026) at IISER Bhopal,  
+    with a strong interest in the field of computer vision and how machines can see, understand, and interact with humans.  
+    I’m passionate about developing intelligent, human-centered systems that make everyday life more convenient while the systems remaining trustworthy and authentic.
+  </p>
+
+  <!-- Buttons -->
+  <div class="mt-8 space-x-4">
+    <a href="#publications" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">Publications</a>
+    <a href="#projects" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">Projects</a>
+    <a href="#contact" class="border border-indigo-600 px-5 py-2 rounded-lg hover:bg-indigo-50">Contact</a>
+  </div>
+</section>
+<!-- Publications Section -->
+<section id="publications" class="bg-white py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-10 flex items-center space-x-2">
+      <span></span><span>Publications</span>
+    </h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Publication Card -->
+      <div class="p-6 border rounded-xl hover:shadow-lg bg-gray-50">
+        <h4 class="text-xl font-bold mb-2">
+          Gesture Recognition for Emergencies: Dataset and Cross-Condition Analysis
+        </h4>
+        <p class="text-gray-700 mb-3">
+          <b>Sinha, J.</b>, Bhattacharya, P., & Agarwal, A.<br>
+          <i>IEEE 19th International Conference on Automatic Face and Gesture Recognition (FG 2025)</i>
+        </p>
+        <a href="https://doi.org/10.1109/FG61629.2025.11099316"
+           class="text-indigo-600 font-medium hover:underline" target="_blank">
+           Open Paper →
+        </a>
+
+        <details class="mt-4">
+          <summary class="cursor-pointer text-sm text-gray-700">BibTeX</summary>
+          <pre class="bg-gray-100 p-4 rounded-lg text-sm mt-2 overflow-x-auto">
+@inproceedings{sinha2025gesture,
+  author    = {Sinha, Jiya and Bhattacharya, Poulomi and Agarwal, Akshay},
+  title     = {Gesture Recognition for Emergencies: Dataset and Cross-Condition Analysis},
+  booktitle = {IEEE 19th International Conference on Automatic Face and Gesture Recognition (FG 2025)},
+  pages     = {1--6},
+  year      = {2025},
+  month     = {May},
+  doi       = {10.1109/FG61629.2025.11099316}
+}
+          </pre>
+        </details>
+      </div>
+
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="bg-gray-50 py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-10 flex items-center space-x-2">
+      <span></span><span>Projects</span>
+    </h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="p-6 border rounded-xl bg-white hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">NIR-to-RGB Image Colorization</h4>
+        <p class="text-gray-700 mb-3">
+          Research project under Dr. Samiran Das, Advanced Signal & Image Processing Lab, IISER Bhopal,
+          working on the task of NIR image colorization using GAN-based approaches with a focus on improving perceptual quality.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="p-6 border rounded-xl bg-white hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">BeautyGAN-based Makeup Style Transfer</h4>
+        <p class="text-gray-700 mb-3">
+          Implemented BeautyGAN (ACMMM 2018) for facial makeup style transfer using PyTorch.
+        </p>
+        <a href="https://github.com/sinhajiya/GAN-i-do-makeup"
+           class="text-indigo-600 font-medium hover:underline" target="_blank">
+           View on GitHub →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="bg-gray-50 py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-10 flex items-center space-x-2">
+      <span></span><span>Research & Internship Experience</span>
+    </h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Experience Card 1 -->
+      <div class="p-6 border rounded-xl bg-white hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Computer Vision Intern</h4>
+        <p class="text-gray-700 italic mb-3">
+          Trustworthy BiometraVision Lab, IISER Bhopal • Sep 2024 – Jan 2025
+        </p>
+        <ul class="list-disc ml-5 text-gray-700 space-y-1 text-[15px]">
+          <li>Created a gesture recognition dataset (1,000+ samples) for robust emergency gesture detection.</li>
+          <li>Benchmarked deep learning models (ViViT, VGG-LSTM, MobileNetV2-LSTM).</li>
+          <li>
+            Co-authored paper accepted at
+            <a href="https://doi.org/10.1109/FG61629.2025.11099316" target="_blank" class="text-indigo-600 hover:underline">FG 2025</a>.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Experience Card 2 -->
+      <div class="p-6 border rounded-xl bg-white hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Research Intern</h4>
+        <p class="text-gray-700 italic mb-3">
+          Advanced Signal & Image Processing Lab, IISER Bhopal • Mar 2025 – Aug 2025
+        </p>
+        <ul class="list-disc ml-5 text-gray-700 space-y-1 text-[15px]">
+          <li>Designed deep learning models to colorize near-infrared (NIR) images into RGB outputs.</li>
+          <li>Explored GAN-based architectures with customized generator designs and perceptual loss functions.</li>
+          <li>Focused on improving the perceptual quality of the generated images while maintaining computational efficiency.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Resume -->
+  <section id="resume" class="bg-white py-16 text-center">
+    <h3 class="text-3xl font-semibold mb-6"> Resume</h3>
+    <p class="mb-6 text-lg"></p>
+    <a href="assests\Jiya_Sinha_Resume.pdf" download class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Download Resume</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-6 text-center">
+    <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+    <div class="space-x-6">
+      <a href="mailto:jiya22@iiserb.ac.in" class="text-indigo-600 font-medium hover:underline">📧 jiya22@iiserb.ac.in</a>
+      <a href="https://github.com/sinhajiya" target="_blank" class="text-gray-700 hover:text-black">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/jiyasinha" target="_blank" class="text-blue-600 hover:text-blue-800">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
