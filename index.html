@@ -4,120 +4,203 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jiya Sinha</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Pp1d1Qp1yl5VxQ5yXhZ+3Z9F5DkL7RkC7p3Z1Eg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer" />
+
 </head>
+
 <body class="bg-rose-50 text-black font-sans">
 
+<!-- HERO SECTION -->
+<section class="min-h-screen bg-gradient-to-br from-rose-100 to-pink-200">
 
-  <!-- Navbar -->
-  <nav class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0">
-    <h1 class="text-2xl font-semibold text-rose-700">Jiya Sinha</h1>
-    <div class="space-x-6">
-      <a href="#about" class="hover:text-black">About</a>
-      <a href="#projects" class="hover:text-black">Projects</a>
-      <a href="#publications" class="hover:text-black">Publications</a>
-      <a href="#experience" class="hover:text-black">Experience</a>
-      <a href="#resume" class="hover:text-black">Resume</a>
-      <a href="#contact" class="hover:text-black">Contact</a>
+  <!-- NAV -->
+  <nav class="max-w-6xl mx-auto px-8 py-6 flex justify-end">
+    <div class="space-x-8 hidden md:block">
+      <a href="#projects" class="hover:text-rose-700">Projects</a>
+      <a href="#publications" class="hover:text-rose-700">Publications</a>
+      <a href="#experience" class="hover:text-rose-700">Experience</a>
+      <a href="#contact" class="hover:text-rose-700">Contact</a>
     </div>
   </nav>
-<!-- Hero Section -->
-<section class="min-h-screen flex items-center bg-gradient-to-br from-rose-100 to-pink-200">
 
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+  <!-- HERO CONTENT -->
+  <div class="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16 mt-12">
 
-    <!-- Profile Image -->
+    <!-- IMAGE -->
     <div class="flex-shrink-0">
       <img
         src="pfp.jpg"
         alt="Jiya Sinha"
-        class="w-48 h-48 rounded-full shadow-lg object-cover border-4 border-white"
+        class="w-72 h-72 rounded-full object-cover border-4 border-rose-200 shadow"
       />
     </div>
 
-    <!-- Text Content -->
-    <div class="text-center md:text-left">
+    <!-- RIGHT CONTENT -->
+    <div class="text-center md:text-left max-w-2xl">
 
-      <!-- Name -->
-      <h2 class="text-4xl font-bold text-black mb-4">
+      <!-- NAME -->
+      <h1 class="text-6xl md:text-7xl font-semibold leading-tight">
         Jiya Sinha
-      </h2>
+      </h1>
 
-      <!-- Contact Info -->
-      <p class="mb-4 text-black">
-        <a href="mailto:jiya22@iiserb.ac.in" class="underline hover:no-underline">jiya22@iiserb.ac.in</a> ·
-        <a href="https://github.com/sinhajiya" target="_blank" class="underline hover:no-underline">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/jiyasinha" target="_blank" class="underline hover:no-underline">LinkedIn</a>
+      <!-- SUBTITLE -->
+      <p class="mt-6 text-xl">
+        Computer Vision · Audio & Speech Processing ·
+        Machine Learning · Deep Learning
       </p>
 
-      <!-- Research Interests -->
-      <p class="text-black mb-6">
-        Computer Vision · Machine Learning · Deep Learning · Generative Models · Speech & Audio Processing
+      <!-- DESCRIPTION -->
+      <p class="mt-4 leading-relaxed">
+        Working at the intersection of vision and audio, building robust
+        machine learning systems for authenticity, perception,
+        and real-world deployment.
       </p>
 
-      <!-- Buttons -->
-      <div class="space-x-4">
-        <a href="#publications" class="bg-rose-600 text-white px-5 py-2 rounded-lg hover:bg-rose-700">
-          Publications
-        </a>
-        <a href="#projects" class="bg-rose-600 text-white px-5 py-2 rounded-lg hover:bg-rose-700">
-          Projects
-        </a>
-        <a href="#contact" class="border border-rose-600 text-black px-5 py-2 rounded-lg hover:bg-rose-100">
-          Contact
-        </a>
-      </div>
+      <!-- SOCIAL ICONS -->
+<div class="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
+
+  <a href="https://www.linkedin.com/in/jiyasinha"
+     target="_blank"
+     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
+    LinkedIn
+  </a>
+
+  <a href="https://github.com/sinhajiya"
+     target="_blank"
+     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
+    GitHub
+  </a>
+
+  <a href="https://scholar.google.com/citations?user=4QtDtu4AAAAJ&hl=en"
+     target="_blank"
+     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
+    Google Scholar
+  </a>
+
+  <a href="mailto:jiya22@iiserb.ac.in"
+     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
+    Email
+  </a>
+
+</div>
+
+
+<div class="mt-8">
+
+  <a href="assets/Jiya_Sinha_Resume.pdf"
+     class="inline-block bg-rose-500 text-white px-8 py-3 rounded-lg text-lg hover:bg-rose-700 shadow-md">
+    Download CV
+      <p class="text-sm mt-2 opacity-70">
+    Last updated: February 2026
+  </p>
+  </a>
+
+
+
+</div>
+
 
     </div>
   </div>
 </section>
 
-<!-- Publications -->
+<!-- EDUCATION -->
+<section id="education" class="bg-rose-50 py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+
+    <h3 class="text-3xl font-semibold mb-12">Education</h3>
+
+    <div class="border border-rose-100 bg-white rounded-xl p-8 shadow-sm">
+
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+        <h4 class="text-xl font-semibold">
+          BS-MS in Data Science and Engineering
+        </h4>
+        <span class="text-sm">
+          2022 – 2027
+        </span>
+      </div>
+
+      <p class="italic mb-4">
+        Indian Institute of Science Education and Research (IISER) Bhopal
+      </p>
+      <p class="mb-4">
+        CGPA: 8.5/10  (7th Semester)
+      </p>
+      <ul class="list-disc pl-6 space-y-2 leading-relaxed">
+        <!-- <li>7th Semester</li> -->
+        <!-- <li>CGPA: 8.5/10</li> -->
+        <!-- <li>Relevant Coursework: Deep Learning, Digital Signal Processing, Computer Vision, Linear Algebra.</li> -->
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PUBLICATIONS -->
 <section id="publications" class="bg-white py-16 px-6">
   <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10 text-rose-700">Publications</h3>
+    <h3 class="text-3xl font-semibold mb-10">Publications</h3>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="p-6 border border-rose-100 rounded-xl hover:shadow-lg bg-rose-50">
-        <h4 class="text-xl font-bold mb-2 text-rose-800">
+      <div class="p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg">
+        <h4 class="text-xl font-bold mb-2">
           Gesture Recognition for Emergencies: Dataset and Cross-Condition Analysis
         </h4>
-        <p class="text-gray-700 mb-3">
+        <p class="mb-3">
           <b>Sinha, J.</b>, Bhattacharya, P., & Agarwal, A.<br>
           <i>IEEE FG 2025</i>
         </p>
         <a href="https://doi.org/10.1109/FG61629.2025.11099316"
-           class="text-black font-medium hover:underline" target="_blank">
-           Open Paper →
+           class="font-medium hover:underline"
+           target="_blank">
+          Open Paper →
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Projects -->
+
+<!-- PROJECTS -->
 <section id="projects" class="bg-rose-50 py-16 px-6">
   <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10 text-rose-700">Projects</h3>
+    <h3 class="text-3xl font-semibold mb-10">Projects</h3>
 
     <div class="grid md:grid-cols-2 gap-8">
 
       <div class="p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2 text-rose-800">NIR-to-RGB Image Colorization</h4>
-        <p class="text-gray-700">
-          Research on GAN-based NIR image colorization focusing on perceptual quality and natural color reconstruction.
+        <h4 class="text-xl font-bold mb-2">NIR-to-RGB Image Colorization</h4>
+        <p>
+          Research on GAN-based NIR image colorization focusing on perceptual
+          quality.
         </p>
       </div>
 
       <div class="p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2 text-rose-800">Graph-Based Makeup Transfer using GCNs</h4>
-        <p class="text-gray-700 mb-3">
-          Landmark-graph-based structured makeup transfer using GCN message passing for smooth color propagation.
+        <h4 class="text-xl font-bold mb-2">Graph-Based Makeup Transfer using GCNs</h4>
+        <p class="mb-3">
+          <ul>
+          <li> Facial landmark-graph-based structured makeup transfer using GCNs. </li>
+          <li> Trained on the MT dataset; evaluated through a 54-user study with an average score of 4.9/10 </li>
+</ul>
+
         </p>
         <a href="https://github.com/sinhajiya/graphglow.git"
-           class="text-black font-medium hover:underline" target="_blank">
-           View on GitHub →
+           class="font-medium hover:underline"
+           target="_blank">
+          View on GitHub →
         </a>
       </div>
 
@@ -125,52 +208,82 @@
   </div>
 </section>
 
-<!-- Experience -->
+<!-- EXPERIENCE -->
 <section id="experience" class="bg-white py-16 px-6">
+
   <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10 text-rose-700">Research & Internship Experience</h3>
+    <h3 class="text-3xl font-semibold mb-10">Research & Internship Experience</h3>
 
     <div class="grid md:grid-cols-2 gap-8">
 
-      <div class="p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2 text-rose-800">Computer Vision Intern</h4>
-        <p class="italic mb-3">Trustworthy BiometraVision Lab • Sep 2024 – Jan 2025</p>
-      </div>
+      <!-- Internship 1 -->
+      <a href="assets/tbvl.pdf"
+         target="_blank"
+         class="block p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg transition cursor-pointer">
 
-      <div class="p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2 text-rose-800">Research Intern</h4>
-        <p class="italic mb-3">Advanced Signal & Image Processing Lab • Mar 2025 – Aug 2025</p>
-      </div>
+        <h4 class="text-xl font-bold mb-2">Research Intern</h4>
+        <p class="italic">Trustworthy BiometraVision Lab • Sep 2024 – Jan 2025</p>
+
+        <ul class="list-disc pl-6 space-y-2 leading-relaxed mt-3">
+          <li>
+            Built a 1,000+ video gesture recognition dataset across diverse environments and devices.
+          </li>
+          <li>
+            Benchmarked state-of-the-art models including ViViT, VGG-LSTM, and MobileNetV2-LSTM under varied lighting and device conditions.
+          </li>
+          <li>
+            Co-authored a peer-reviewed paper accepted at IEEE FG 2025.
+          </li>
+        </ul>
+
+        <p class="text-sm mt-4 opacity-60">
+          Click to view certificate →
+        </p>
+
+      </a>
+
+      <!-- Internship 2 -->
+      <a href="assets/asip.pdf"
+         target="_blank"
+         class="block p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg transition cursor-pointer">
+
+        <h4 class="text-xl font-bold mb-2">Research Intern</h4>
+        <p class="italic">Advanced Signal & Image Processing Lab • Mar 2025 – Aug 2025</p>
+
+        <ul class="list-disc pl-6 space-y-2 leading-relaxed mt-3">
+          <li>
+            Designed deep learning architectures for NIR-to-RGB image colorization.
+          </li>
+          <li>
+            Explored GAN-based generator variations and perceptual loss formulations.
+          </li>
+          <li>
+            Optimized for perceptual quality.
+          </li>
+        </ul>
+
+        <p class="text-sm mt-4 opacity-60">
+          Click to view certificate →
+        </p>
+
+      </a>
 
     </div>
   </div>
 </section>
 
-<!-- Resume -->
-<section id="resume" class="bg-rose-50 py-16 text-center">
-  <h3 class="text-3xl font-semibold mb-6 text-rose-700">Resume</h3>
-  <a href="assets/Jiya_Sinha_Resume.pdf" download
-     class="bg-rose-600 text-white px-6 py-3 rounded-lg hover:bg-rose-700">
-     Download Resume
-  </a>
-</section>
 
-<!-- Contact -->
-<section id="contact" class="max-w-4xl mx-auto py-16 px-6 text-center">
-  <h3 class="text-3xl font-semibold mb-6 text-rose-700">Contact</h3>
+<!-- CONTACT -->
+<section id="contact" class="bg-rose-50 py-16 text-center">
+  <h3 class="text-3xl font-semibold mb-6">Contact</h3>
   <div class="space-x-6">
-    <a href="mailto:jiya22@iiserb.ac.in" class="text-black font-medium hover:underline">
+    <a href="mailto:jiya22@iiserb.ac.in" class="hover:underline">
       jiya22@iiserb.ac.in
     </a>
-    <a href="https://github.com/sinhajiya" target="_blank" class="hover:text-black">
-      GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/jiyasinha" target="_blank" class="hover:text-black">
-      LinkedIn
-    </a>
+    <a href="https://github.com/sinhajiya" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/jiyasinha" target="_blank">LinkedIn</a>
   </div>
 </section>
 
 </body>
-
 </html>
