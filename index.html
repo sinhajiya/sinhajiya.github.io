@@ -1,294 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Jiya Sinha</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="assets/favicon.png" />
-
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Pp1d1Qp1yl5VxQ5yXhZ+3Z9F5DkL7RkC7p3Z1Eg=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer" />
-
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body class="bg-rose-50 text-black font-sans">
+<div class="scroll-progress"></div>
 
-<section class="min-h-screen bg-gradient-to-br from-rose-100 to-pink-200">
+<script>
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-  <nav class="max-w-6xl mx-auto px-8 py-6 flex justify-end">
-    <div class="space-x-8 hidden md:block">
-      <a href="#projects" class="hover:text-rose-700">Projects</a>
-      <a href="#publications" class="hover:text-rose-700">Publications</a>
-      <a href="#experience" class="hover:text-rose-700">Experience</a>
-      <a href="#contact" class="hover:text-rose-700">Contact</a>
-    </div>
-  </nav>
+  const scrollPercent = (scrollTop / docHeight) * 100;
 
-  <div class="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16 mt-12">
+  document.querySelector(".scroll-progress").style.width = scrollPercent + "%";
+});
+</script>
 
-    <div class="flex-shrink-0">
-      <img
-        src="pfp.jpg"
-        alt="Jiya Sinha"
-        class="w-72 h-72 rounded-full object-cover border-4 border-rose-200 shadow"
-      />
-    </div>
 
-    <div class="text-center md:text-left max-w-2xl">
+<body>
+<div class="nav">
 
-      <h1 class="text-6xl md:text-7xl font-semibold leading-tight">
-        Jiya Sinha
-      </h1>
-
-      <p class="mt-6 text-xl">
-        Computer Vision · Audio & Speech Processing ·
-        Machine Learning · Deep Learning
-      </p>
-
-      <!-- DESCRIPTION -->
-      <p class="mt-4 leading-relaxed">
-        Working in the field of vision and audio, building robust
-        machine learning systems.
-      </p>
-
-      <!-- SOCIAL ICONS -->
-<div class="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
-
-  <a href="https://www.linkedin.com/in/jiyasinha"
-     target="_blank"
-     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
-    LinkedIn
-  </a>
-
-  <a href="https://github.com/sinhajiya"
-     target="_blank"
-     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
-    GitHub
-  </a>
-
-  <a href="https://scholar.google.com/citations?user=4QtDtu4AAAAJ&hl=en"
-     target="_blank"
-     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
-    Google Scholar
-  </a>
-
-    <a href="https://orcid.org/0009-0008-0665-3404?lang=en"
-     target="_blank"
-     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
-    Orchid ID
-  </a>
-
-  
-  <a href="mailto:jiya22@iiserb.ac.in"
-     class="px-5 py-2 border border-black rounded-full text-sm hover:bg-black hover:text-white transition">
-    Email
-  </a>
+  <a href="#education">Education</a>
+  <a href="#publication">Publication</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
 
 </div>
 
+<!-- HERO -->
+<section class="hero">
+  <div class="container"> 
 
-<div class="mt-8">
+    <div class="hero-content">
 
-  <a href="assests/Jiya_Sinha_Resume.pdf"
-     class="inline-block bg-rose-500 text-white px-8 py-3 rounded-lg text-lg hover:bg-rose-700 shadow-md">
-    Download CV
-      <p class="text-sm mt-2 opacity-70">
-    Last updated: May 2026
-  </p>
-  </a>
+      <img src="pfp.jpg" class="profile-img">
 
+      <div class="hero-text">
+        <h1>Jiya Sinha</h1>
 
+        <!-- <p>Computer Vision · Audio & Speech Processing · Machine Learning · Deep Learning</p> -->
 
-</div>
-
-
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="bg-rose-50 py-20 px-6">
-  <div class="max-w-5xl mx-auto">
-
-    <h3 class="text-3xl font-semibold mb-12">Education</h3>
-
-    <div class="border border-rose-100 bg-white rounded-xl p-8 shadow-sm">
-
-      <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
-        <h4 class="text-xl font-semibold">
-          BS-MS in Data Science and Engineering
-        </h4>
-        <span class="text-sm">
-          2022 – 2027
-        </span>
-      </div>
-
-      <p class="italic mb-4">
-        Indian Institute of Science Education and Research (IISER) Bhopal
-      </p>
-      <p class="mb-4">
-        CGPA: 8.57/10  (7th Semester)
-      </p>
-      <ul class="list-disc pl-6 space-y-2 leading-relaxed">
-        <!-- <li>7th Semester</li> -->
-        <!-- <li>CGPA: 8.57/10</li> -->
-        <!-- <li>Relevant Coursework: Deep Learning, Digital Signal Processing, Computer Vision, Linear Algebra.</li> -->
-      </ul>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- PUBLICATIONS -->
-<section id="publications" class="bg-white py-16 px-6">
-  <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10">Publications</h3>
-
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">
-          Gesture Recognition for Emergencies: Dataset and Cross-Condition Analysis
-        </h4>
-        <p class="mb-3">
-          <b>Sinha, J.</b>, Bhattacharya, P., & Agarwal, A.<br>
-          <i>IEEE FG 2025</i>
-        </p>
-        <a href="https://doi.org/10.1109/FG61629.2025.11099316"
-           class="font-medium hover:underline"
-           target="_blank">
-          Paper
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- EDUCATION -->
-<section id="thesis" class="bg-rose-50 py-20 px-6">
-  <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10">Thesis</h3>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-      <div class="p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-3">
-          Does Reality Matter? A Reality-Aware Audio SceneFake Dataset
-        </h4>
-
-        <p class="mb-4">
-          Built a 15.42-hour reality-aware SceneFake audio dataset across 9 acoustic scenes, recorded under natural conditions with diverse speakers and environments to address gaps in synthetic-only datasets. Demonstrates that existing deepfake detection models fail to generalize to realistic conditions, emphasizing the need for real-world data in robust audio forgery detection.
-
-        </p>
-        <a href="https://drive.google.com/file/d/1-QDfykf2f5fAxdnW_OipbtKi8FQ9XUjl/view?usp=sharing"
-           class="font-medium hover:underline"
-           target="_blank">
-          Thesis 
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  
-<!-- PROJECTS -->
-<!-- <section id="projects" class="bg-rose-50 py-16 px-6"> -->
-  <section id="projects" class="bg-white py-16 px-6">
-  <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10">Projects</h3>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-      <!-- <div class="p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg"> -->
-      <div class="p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">NIR-to-RGB Image Colorization</h4>
         <p>
-          Research on GAN-based NIR image colorization focusing on perceptual
-          quality.
+          Undergrad student, Data Science and Engineering
         </p>
-          <a href="https://github.com/sinhajiya/PerceptGAN"
-           class="font-medium hover:underline"
-           target="_blank">
-          GitHub
-        </a>
-        
+
+        <p>
+          IISER Bhopal, India
+        </p>
+
+        <p>
+
+        </p>
+        <p>
+          Working in the field of vision and audio, building robust machine learning systems.
+        </p>
+
+        <div class="socials">
+
+  <a href="https://www.linkedin.com/in/jiyasinha" class="icon" data-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/sinhajiya" class="icon" data-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://scholar.google.com/citations?user=4QtDtu4AAAAJ&hl=en" 
+     class="icon" data-label="Google Scholar">
+    <i class="fas fa-graduation-cap"></i>
+  </a>
+
+  <a href="mailto:jiya22@iiserb.ac.in" class="icon" data-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+</div>
+
+        <br>
+
+        <a href="#" class="btn-primary">Download CV</a>
+        <p style="font-size:12px; opacity:0.7;">Last updated: June 2026</p>
       </div>
-      
 
-      <!-- <div class="p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg"> -->
-      <div class="p-6 border border-rose-100 rounded-xl bg-rose-50 hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Graph-Based Makeup Transfer using GCNs</h4>
-        <p class="mb-3">
-          <ul>
-          <li> Facial landmark-graph-based structured makeup transfer using GCNs. </li>
-          <li> Trained on the MT dataset; evaluated through a 54-user study with an average score of 4.9/10 </li>
-</ul>
+    </div>
+  </div>
+</section>
 
+<section class="scroll-section" id="education"
+         data-bg="linear-gradient(135deg, #ffd6e0, #fff1f5)">
+
+  <div class="dual-container">
+  <!-- <section id="education" class="scroll-section"></section> -->
+    <div class="card">
+       <div class="upper-tag">
+      Education
+    </div>
+
+      <h3>BS-MS in Data Science and Engineering</h3>
+      <p>2022 – 2027</p>
+      <p><i>IISER Bhopal</i></p>
+      <p>CGPA: 8.78/10 (8th semester) </p>
+    </div>
+
+
+    <div class="card">
+      <!-- <h2>Research Interests</h2> -->
+
+      <div class="upper-tag">
+      Research Areas
+    </div>
+
+      <ul>
+        <li>Computer Vision</li>
+        <li>Audio & Speech Processing</li>
+        <li>Deep Learning</li>
+        <li>Multimodal AI</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="publication-section" id="publication">
+
+  <div class="publication-card">
+
+    <div class="upper-tag">
+      Selected Publication
+    </div>
+
+    <h2>
+      Gesture Recognition for Emergencies: Dataset and Cross-Condition Analysis
+
+    </h2>
+
+    <p class="authors">
+      <strong>Jiya Sinha</strong>, P. Bhattacharya, A. Agarwal
+    </p>
+
+    <p class="venue">
+      IEEE International Conference on Automatic Face and Gesture Recognition (FG 2025)
+    </p>
+
+
+    <a
+      href="https://ieeexplore.ieee.org/document/11099316/"
+      target="_blank"
+      class="paper-btn"
+    >
+      Read Publication
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="publication-section">
+
+  <div class="publication-card" >
+
+    <div class="upper-tag">
+      Bachelor's Thesis
+    </div>
+
+    <h2>
+      Does Reality Matter? A Reality-Aware Audio SceneFake Dataset
+    </h2>
+
+ 
+    <p class="thesis-desc">
+      Built a 15.42-hour reality-aware SceneFake audio dataset across 9 acoustic scenes,
+      recorded under natural conditions with diverse speakers and environments.
+      Demonstrates that existing deepfake detection models fail to generalize
+      to realistic conditions, highlighting the need for real-world data.
+    </p>
+
+    <a href="https://drive.google.com/file/d/1-QDfykf2f5fAxdnW_OipbtKi8FQ9XUjl/view"
+       target="_blank"
+       class="paper-btn">
+      View Thesis
+    </a>
+
+  </div>
+
+</section>
+<section class="projects-section" id="projects">
+
+  <div class="projects-wrapper">
+
+    <div class="upper-tag">
+      Selected Projects
+    </div>
+
+    <div class="projects-inner">
+
+      <!-- LEFT -->
+      <div class="project-card">
+        <h3>Graph-Based Makeup Transfer using GCNs</h3>
+        <p class="project-desc">
+          Structured facial graph-based makeup transfer using GCNs,
+          evaluated through a user study with perceptual scoring.
         </p>
         <a href="https://github.com/sinhajiya/graphglow.git"
-           class="font-medium hover:underline"
-           target="_blank">
-          GitHub
+           target="_blank"
+           class="paper-btn">
+          View Project
+        </a>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="project-card">
+        <h3>Face Recognition using classical CV techniques</h3>
+        <p class="project-desc">
+          Built a face recognition pipeline using the Yale Face Database
+          with hand-crafted features and classical ML models.
+        </p>
+        <a href="https://github.com/sinhajiya/Face_Recognition_from_Features_using_Yale_Face_Database"
+           target="_blank"
+           class="paper-btn">
+          View Project
         </a>
       </div>
 
     </div>
+
   </div>
+
 </section>
+<section class="projects-section" id="experience">
 
-<!-- EXPERIENCE -->
-<section id="experience" class="bg-rose-50 py-16 px-6">
+  <div class="projects-wrapper">
 
-  <div class="max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-10">Research & Internship Experience</h3>
+    <div class="upper-tag">
+      Experience
+    </div>
 
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="projects-inner">
 
-      <!-- Internship 1 -->
-      <a href="assests/tbvl.pdf"
-         target="_blank"
-        class="block p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg transition cursor-pointer">
-         <!-- class="block p-6 border border-rose-100 rounded-xl bg-white-50 hover:shadow-lg transition cursor-pointer"> -->
-        
-        <h4 class="text-xl font-bold mb-2">Research Intern</h4>
-        <p class="italic">Trustworthy BiometraVision Lab • Sep 2024 – Jan 2025</p>
+<div class="project-card">
+  <h3>Research Intern</h3>
 
-        <ul class="list-disc pl-6 space-y-2 leading-relaxed mt-3">
-          <li>
-            Built a 1,000+ video gesture recognition dataset across diverse environments and devices.
-          </li>
-          <li>
-            Benchmarked state-of-the-art models including ViViT, VGG-LSTM, and MobileNetV2-LSTM under varied lighting and device conditions.
-          </li>
-          <li>
-            Co-authored a peer-reviewed paper accepted at IEEE FG 2025.
-          </li>
-        </ul>
+  <p class="exp-org">
+    Trustworthy BiometraVision Lab, IISER Bhopal
+  </p>
 
-        <p class="text-sm mt-4 opacity-60">
-          Certificate
+  <p class="exp-duration">
+    Sep 2024 – Jan 2025
+  </p>
+
+  <ul>
+    <li>Built a 1,000+ video gesture recognition dataset across diverse environments and devices.</li>
+    <li>Benchmarked models including ViViT, VGG-LSTM, and MobileNetV2-LSTM.</li>
+    <li>Co-authored a paper accepted at IEEE FG 2025.</li>
+  </ul>
+</div>
+
+      <!-- EXPERIENCE 2 -->
+      <div class="project-card">
+        <h3>Research Intern</h3>
+
+        <p class="exp-org">
+          Advanced Signal and Image Processing Lab (ASIP), IISER Bhopal
         </p>
 
-      </a>
+        <p class="exp-duration">
+          Mar 2025 – Aug 2025
+        </p>
 
-      <!-- Internship 2 -->
-      <a href="assests/asip.pdf"
-         target="_blank"
-          class="block p-6 border border-rose-100 rounded-xl bg-white hover:shadow-lg transition cursor-pointer">
-         <!-- class="block p-6 border border-rose-100 rounded-xl bg-white-50 hover:shadow-lg transition cursor-pointer"> -->
+        <p class="project-desc">
+          <ul class="card-list">
 
-        <h4 class="text-xl font-bold mb-2">Research Intern</h4>
-        <p class="italic">Advanced Signal & Image Processing Lab • Mar 2025 – Aug 2025</p>
-
-        <ul class="list-disc pl-6 space-y-2 leading-relaxed mt-3">
           <li>
             Designed deep learning architectures for NIR-to-RGB image colorization.
           </li>
@@ -299,32 +289,50 @@ referrerpolicy="no-referrer" />
             Optimized for perceptual quality.
           </li>
         </ul>
-
-        <p class="text-sm mt-4 opacity-60">
-          Certificate
         </p>
+      </div>
 
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="footer">
+
+  <div class="footer-content" id="contact">
+
+    <div class="upper-tag">
+      Contact
+    </div>
+
+    <div class="footer-links">
+
+      <a href="mailto:jiya22@iiserb.ac.in">
+        jiya22@iiserb.ac.in
+      </a>
+
+      <a href="mailto:jiyasinha2004b@gmail.com">
+        jiyasinha2004b@gmail.com
+      </a>
+
+    
+
+      <a href="https://www.linkedin.com/in/jiyasinha" target="_blank">
+        LinkedIn
       </a>
 
     </div>
+
+    <p class="footer-note">
+      © 2026 Jiya Sinha
+    </p>
+
+
+
   </div>
-</section>
 
-
-<!-- CONTACT -->
-<section id="contact" class="bg-rose-50 py-16 text-center">
-  <h3 class="text-3xl font-semibold mb-6">Contact</h3>
-  <div class="space-x-6">
-    <a href="mailto:jiya22@iiserb.ac.in" class="hover:underline">
-      jiya22@iiserb.ac.in
-    </a>
-    <a href="mailto:jiyasinha2004b@gmail.com" class="hover:underline">
-      jiyasinha2004b@gmail.com
-    </a>
-    <a href="https://github.com/sinhajiya" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/jiyasinha" target="_blank">LinkedIn</a>
-  </div>
-</section>
-
+</footer>
 </body>
 </html>
