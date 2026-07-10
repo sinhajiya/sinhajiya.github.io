@@ -467,6 +467,16 @@ section {
   font-size: 1.2rem;
 }
 
+
+.project-card h2 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+
+  color: #3a2f2f;
+}
+
 .project-desc {
   font-size: 14px;
   color: #6b5b5b;
